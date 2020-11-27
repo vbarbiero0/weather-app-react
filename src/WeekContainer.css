@@ -1,0 +1,38 @@
+.week-container {
+  padding-top: 40px;
+  width: 100%;
+  margin-left: -30px;
+}
+
+.row {
+  float: left;
+}
+.col-3 {
+  display: block;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 10px;
+  transition: all 200ms ease;
+  top: 30px;
+  background: none;
+}
+
+.day-time {
+  font-size: 15px;
+  font-weight: 600;
+}
+.day-icon {
+  display: block;
+  margin: 0 auto;
+  width: 55px;
+  background: none;
+  background: transparent;
+}
+
+.day-temp {
+  text-align: center;
+  font-size: 15px;
+  line-height: 6px;
+  font-weight: 600;
+}

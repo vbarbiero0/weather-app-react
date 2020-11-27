@@ -1,0 +1,23 @@
+.date-container {
+  color: white;
+  position: relative;
+  line-height: 25px;
+}
+
+.date-dayname {
+  margin: 0;
+  font-size: 40px;
+}
+
+.date-day {
+  margin-left: 2px;
+  font-size: 15px;
+}
+
+.location {
+  margin-left: 5px;
+}
+
+.location:hover {
+  transform: scale(1.1);
+}

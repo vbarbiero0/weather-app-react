@@ -1,0 +1,41 @@
+.weather-container {
+  position: relative;
+  color: white;
+  padding-top: 100px;
+}
+
+.weather-icon .icon {
+  width: 115%;
+  margin: 0 0 0 -30px;
+}
+
+.weather-temp {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 10px;
+}
+.weather-temp .alternate {
+  font-weight: 700;
+  font-size: small;
+}
+
+a {
+  color: white;
+}
+
+.weather-description {
+  font-size: 140%;
+  margin-left: 14px;
+}
+
+h3::first-letter {
+  text-transform: capitalize;
+}
+
+.weather-container .active:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

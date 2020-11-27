@@ -1,0 +1,14 @@
+.info-side {
+  position: relative;
+  background: #222831;
+  max-width: 335px;
+  height: 470px;
+  border-radius: 25px;
+  left: 330px;
+  top: 18px;
+  z-index: -1;
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
