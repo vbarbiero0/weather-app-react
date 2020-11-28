@@ -11,7 +11,7 @@ export default function DateContainer() {
             Tuesday
           </h2>
           <div className="date-day" id="day">
-            12 Sept 2020
+            13 Sept 2020
           </div>
         </span>
 
