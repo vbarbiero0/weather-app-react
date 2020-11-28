@@ -3,7 +3,9 @@
 }
 
 form {
-  margin-right: 20px;
+  margin-left: 15px;
+  width: 60%;
+  
 }
 
 .search-location {
@@ -12,7 +14,7 @@ form {
 
 input {
   display: block;
-  margin-top: 100px;
+  margin-top: 70px;
   text-align: left;
   padding-left: 15px;
   width: 100%;
@@ -24,8 +26,10 @@ input {
 }
 
 .col-2 {
-  top: 100px;
-  right: 30px;
+  position: relative;
+  float: right;
+  top: 70px;
+  right: 10px;
 }
 
 button {

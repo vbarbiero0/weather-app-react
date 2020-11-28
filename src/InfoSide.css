@@ -1,14 +1,15 @@
 .info-side {
+  display: block;
+  margin: 0 auto;
   position: relative;
-  background: #222831;
-  max-width: 335px;
-  height: 470px;
+  float: right;
+  height: 465px;
+  width: 350px;
   border-radius: 25px;
-  left: 330px;
-  top: 18px;
+  background-color:#222831 ;
+  font-family: "Montserrat", sans-serif;
+  left: -75px;
+  top: 5px;
   z-index: -1;
-  padding-left: 60px;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 30px;
+  padding-left: 40px;
 }

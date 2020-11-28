@@ -4,7 +4,7 @@ import "./LocationContainer.css";
 export default function LocationContainer() {
   return (
     <div>
-      <div className="row" id="search-location">
+      <div className="search-form" id="search-location">
         <div className="col-10">
           <form action="submit" id="change-location">
             <input

@@ -1,17 +1,15 @@
-.week-container {
-  padding-top: 40px;
-  width: 100%;
-  margin-left: -30px;
+
+
+.row{
+
+float: right;
 }
 
-.row-1 .row-2 .row-3 .row-4 {
-  float: left;
-}
 .col-3 {
-  display: block;
-  margin: 0 auto;
-  padding-left: 18px;
-  padding-right: 18px;
+  
+  float: right;
+  padding-left: 8px;
+  padding-right: 8px;
   border-radius: 10px;
   transition: all 200ms ease;
   top: 30px;
@@ -19,6 +17,7 @@
 }
 
 .day-time {
+  text-align: center;
   font-size: 15px;
   font-weight: 600;
 }

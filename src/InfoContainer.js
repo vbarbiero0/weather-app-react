@@ -7,7 +7,7 @@ export default function InfoContainer() {
       <div className="minimumTemp">
         <span className="title"> MIN. TEMP</span>
         <span className="value" id="minimum-temp">
-          12
+          16
         </span>
       </div>
       <div className="humidity">

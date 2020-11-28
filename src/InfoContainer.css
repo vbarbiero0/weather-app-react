@@ -1,8 +1,11 @@
+.info-container {
+  margin: 30px;
+  line-height: 1.7em;
+}
 .title {
   font-weight: 750;
 }
 .value {
   float: right;
-  font-weight: 500;
-  margin-right: 20px;
+  font-weight: 100;
 }

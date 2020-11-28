@@ -1,12 +1,13 @@
 .date-container {
   color: white;
-  position: relative;
-  line-height: 25px;
+  position: absolute;
+  top: 5px;
+  margin: 25px;
+  
 }
 
 .date-dayname {
   margin: 0;
-  font-size: 40px;
 }
 
 .date-day {
