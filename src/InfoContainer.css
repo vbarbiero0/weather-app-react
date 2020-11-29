@@ -4,9 +4,13 @@
 }
 
 .title {
-  font-weight: 750;
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
 }
 .value {
+  padding-right: 10px;
   float: right;
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 400;
 }
