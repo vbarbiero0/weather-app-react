@@ -3,7 +3,7 @@ import "./InfoContainer.css";
 
 export default function InfoContainer() {
   return (
-    <div>
+    <div className="info-container" id="info-container">
       <div className="minimumTemp">
         <span className="title"> MIN. TEMP</span>
         <span className="value" id="minimum-temp">
@@ -22,6 +22,7 @@ export default function InfoContainer() {
           0 <span>km/h</span>
         </span>
       </div>
-    </div>
+      </div>
+    
   );
 }

@@ -1,15 +1,8 @@
+
 .info-side {
-  display: block;
-  margin: 0 auto;
   position: relative;
-  float: right;
-  height: 465px;
-  width: 350px;
-  border-radius: 25px;
-  background-color:#222831 ;
+  margin-left: 50px;
+  bottom: 400px;
+  color: white;
   font-family: "Montserrat", sans-serif;
-  left: -75px;
-  top: 5px;
-  z-index: -1;
-  padding-left: 40px;
 }

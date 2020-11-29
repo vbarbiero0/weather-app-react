@@ -1,15 +1,15 @@
 
 
 .row{
-
 float: right;
+margin-right: 22px;
 }
 
 .col-3 {
-  
-  float: right;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
   border-radius: 10px;
   transition: all 200ms ease;
   top: 30px;
@@ -18,7 +18,7 @@ float: right;
 
 .day-time {
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
 }
 .day-icon {
@@ -31,7 +31,13 @@ float: right;
 
 .day-temp {
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 6px;
   font-weight: 600;
+}
+
+.col-3:hover {
+transition: all 200ms ease;
+	background: #fff;
+	color: #222831;
 }

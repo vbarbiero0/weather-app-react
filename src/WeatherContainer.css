@@ -1,24 +1,22 @@
 
 .weather-container {
-  
   position: absolute;
-  
-  margin-left: 15px;
-  color: black;
-  bottom: 50px;
+  bottom: 30px;
+  margin-left: 25px;
   
 }
 
+
 .weather-icon {
-  width: 100%;
-  margin-bottom: 20px;
-  margin-left: -10px;
+  width: 30px;
+  margin-left: -20px;
 }
 
 .weather-temp {
+  margin: 0;
   font-weight: 700;
-  font-size: 80px;
-  line-height: 2px;
+  font-size: 60px;
+  line-height: 5px;
   
 }
 .weather-temp .alternate {
@@ -26,21 +24,25 @@
   font-size: small;
 }
 
+.weather-description {
+  margin: 0;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
 a {
   color: white;
 }
 
-.weather-description {
-  font-size: 150%;
-}
 
 h3::first-letter {
   text-transform: capitalize;
 }
 
+
 .active {
   cursor: default;
-  color: #0000EE
+  color: #0000ee;
 }
 .weather-container .active:hover {
   text-decoration: none;

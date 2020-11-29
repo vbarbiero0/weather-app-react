@@ -4,20 +4,20 @@ import "./LocationContainer.css";
 export default function LocationContainer() {
   return (
     <div>
-      <div className="search-form" id="search-location">
-        <div className="col-10">
-          <form action="submit" id="change-location">
-            <input
+        <ul className="location-container" id="location-container">
+            <li id="search-form">
+          <form className="form" action="submit" id="change-location">
+             <input
               type="text"
               placeholder="Type a city..."
               autocomplete="off"
               autofocus="on"
               id="city-input"
-            />
+             />
           </form>
-        </div>
+          </li>
 
-        <div className="col-2" id="current-location-btn">
+        <li id="current-location-btn">
           <button
             type="text"
             placeholder="Current location"
@@ -29,8 +29,9 @@ export default function LocationContainer() {
               alt="location-pin"
             />
           </button>
-        </div>
-      </div>
+        </li>
+      </ul>
+      
     </div>
   );
 }
