@@ -15,18 +15,19 @@ input {
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
   border-radius: 25px;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
 }
 
 button {
-  display: block;
-  margin: 0 auto;
+  position: relative;
+  top: 8px;
   background-color: transparent;
   border: none;
   outline: none !important;
   cursor: pointer;
 }
+
 
 ::placeholder {
   color: white;
