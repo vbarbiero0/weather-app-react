@@ -27,7 +27,7 @@ export default function DateContainer() {
         </h6>
       </div>
       <span className="link" id="link">
-              <a href="https://github.com/vbarbiero0/weather-app-react" target="_blank" >Open-source codes</a>
+              <a href="https://github.com/vbarbiero0/weather-app-react" >Open-source codes</a>
                , by Vanessa Barbiero
         </span>
     </div>
