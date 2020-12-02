@@ -1,0 +1,201 @@
+.weather-side {
+  position: relative;
+  bottom: 5px;
+  left: -250px;
+  height: 100%;
+  border-radius: 25px;
+  width: 300px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.date-container {
+  color: white;
+  position: absolute;
+  top: 1px;
+  margin-top: 20px;
+  margin-left: 25px;
+  line-height: 32px;
+}
+
+.date-dayname {
+  margin: 0;
+  font-size: 40px;
+}
+
+.date-day {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.location {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.weather-container {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 20px;
+}
+
+.weather-icon {
+  width: 50px;
+  margin-left: -20px;
+}
+
+.weather-temp {
+  margin: 0;
+  padding-top: 8px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 5px;
+}
+
+.weather-temp .alternate {
+  font-weight: 700;
+  font-size: small;
+}
+
+.weather-description {
+  margin: 0;
+  padding-top: 8px;
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+a {
+  color: white;
+}
+
+h3::first-letter {
+  text-transform: capitalize;
+}
+
+.active {
+  cursor: default;
+  color: #0000ee;
+}
+.weather-container .active:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.info-side {
+  position: relative;
+  margin-left: 45px;
+  bottom: 430px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info-container {
+  margin-left: 25px;
+  margin-right: 20px;
+  line-height: 1.7em;
+}
+
+.title {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.value {
+  padding-right: 10px;
+  float: right;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.week-container {
+  margin-left: 38px;
+  padding-top: 50px;
+}
+
+.row {
+  display: inline-block;
+}
+
+.col-3 {
+  display: block;
+  margin: 0;
+  padding: 10px 8px 15px 8px;
+  border-radius: 10px;
+  transition: all 200ms ease;
+  background: none;
+}
+
+.day-time {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.day-icon {
+  display: block;
+  margin: 0 auto;
+  width: 55px;
+  background: none;
+  background: transparent;
+}
+
+.day-temp {
+  text-align: center;
+  font-size: 20px;
+  line-height: 6px;
+  font-weight: 600;
+}
+
+.col-3:hover {
+  transition: all 200ms ease;
+  background: #fff;
+  color: #222831;
+}
+
+li {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 35px;
+}
+
+input {
+  width: 225px;
+  padding-left: 10px;
+  text-align: left;
+  height: 35px;
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
+
+
+button {
+  position: relative;
+  top: 8px;
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-family: "Montserrat", sans-serif;
+}

@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import WeatherSide from "./WeatherSide";
-import InfoSide from "./InfoSide";
-
+import Weather from "./Weather";
 
 import "./index.css";
 
@@ -11,8 +9,8 @@ ReactDOM.render(
   <React.StrictMode>
       <div>
         <div className="app-container" id="app-container">
-        <WeatherSide />
-        <InfoSide />
+        <Weather />
+        
         
         </div>
       </div>
