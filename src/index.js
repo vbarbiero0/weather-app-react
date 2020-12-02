@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import WeatherSide from "./WeatherSide";
 import InfoSide from "./InfoSide";
 
+
 import "./index.css";
 
 const rootElement = document.getElementById("root");

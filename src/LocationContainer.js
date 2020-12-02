@@ -1,18 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./LocationContainer.css";
 
 export default function LocationContainer() {
+  
+const[weatherData,setWeatherData] = useState({ ready: false })
+
+  function handleResponse(response) {
+    
+      setWeatherData({
+      ready:true,
+      temperature: response.data.main.temp,
+      minimum: response.data.main.temp_min,
+      humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
+      description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+    });
+      }
+  
+      function handleSubmit
+  
+  const apiKey = "094780c710fa4efd669f0df8c3991927";
+  let city = "Montreal";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(handleResponse);
+  
+  
   return (
     <div>
         <ul className="location-container" id="location-container">
             <li id="search-form">
-          <form className="form" action="submit" id="change-location">
+          <form className="form" action="submit" id="change-location" onSubmit={handleSubmit}>
              <input
               type="text"
               placeholder="Type a city..."
               autocomplete="off"
               autofocus="on"
               id="city-input"
+              onChange={handleCityChange}
              />
           </form>
           </li>
