@@ -17,7 +17,7 @@
   color: white;
   position: absolute;
   top: 1px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 25px;
   line-height: 32px;
 }
@@ -65,20 +65,17 @@
   font-size: small;
 }
 
-.weather-description {
+h4 {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 10px;
   margin-left: 10px;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: lighter;
+  text-transform: capitalize;
 }
 
 a {
   color: white;
-}
-
-h3::first-letter {
-  text-transform: capitalize;
 }
 
 .active {

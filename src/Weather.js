@@ -3,13 +3,15 @@ import axios from "axios";
 import "./Weather.css";
 
 
-export default function Weather() {
-  const[ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState ({});
+
+export default function Weather(props) {
+  
+  const [weatherData, setWeatherData] = useState ({ ready: false});
   
   function handleResponse(response){
     console.log(response.data);
     setWeatherData({
+      ready:true,
       city: response.data.name,
       country: response.data.sys.country,
       temperature: Math.round(response.data.main.temp),
@@ -17,13 +19,14 @@ export default function Weather() {
       humidity: Math.round(response.data.main.humidity),
       minTemp: Math.round(response.data.main.temp_min),
       description: response.data.weather[0].description,
+      iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
+      date: "13 Sept 2020"
     })
     
-    setReady(true);
   }
   
   
-if(ready) {
+if(weatherData.ready) {
 
   return (
     <div>
@@ -40,12 +43,14 @@ if(ready) {
             Tuesday
           </h3>
           <div className="date-day" id="day">
-            13 Sept 2020
+            {weatherData.date}
           </div>
         </span>
 
         <h6 className="location">
           <i className="fas fa-map-marker-alt" id="location-img"></i>
+          <i data-fa-symbol="delete" class="fas fa-trash fa-fw"></i>
+          
           <span className="cityName" id="city-name">
             {weatherData.city}
           </span>
@@ -66,8 +71,8 @@ if(ready) {
       <div className="weather-icon" id="weather-icon">
         <img
           className="icon"
-          src="http://openweathermap.org/img/wn/10d@2x.png"
-          alt="Clear"
+          src={weatherData.iconUrl}
+          alt={weatherData.description}
           id="icon"
           width="110px"
           float="left"
@@ -92,7 +97,7 @@ if(ready) {
           </a>
         </span>
       </h1>
-      <h4 className="weather-description" id="weather-description">
+      <h4 className="capitalize" id="weather-description">
         {weatherData.description}
       </h4>
     </div>
@@ -220,8 +225,8 @@ if(ready) {
 } else {
 
   const apiKey= "094780c710fa4efd669f0df8c3991927";
-  let city = "Montreal";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
 
 

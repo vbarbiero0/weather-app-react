@@ -9,9 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
       <div>
         <div className="app-container" id="app-container">
-        <Weather />
-        
-        
+        <Weather defaultCity= "New York" />
         </div>
       </div>
   </React.StrictMode>,
