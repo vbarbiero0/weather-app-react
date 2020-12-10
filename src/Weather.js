@@ -1,5 +1,6 @@
 import React, { useState} from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 
@@ -20,8 +21,8 @@ export default function Weather(props) {
       minTemp: Math.round(response.data.main.temp_min),
       description: response.data.weather[0].description,
       iconUrl: "http://openweathermap.org/img/wn/10d@2x.png",
-      date: "13 Sept 2020"
-    })
+      date: new Date(response.data.dt * 1000),
+    });
     
   }
   
@@ -38,18 +39,11 @@ if(weatherData.ready) {
       />
  
       <div className="date-container" id="date-container">
-        <span className="date" id="date">
-          <h3 className="date-dayname" id="day-time">
-            Tuesday
-          </h3>
-          <div className="date-day" id="day">
-            {weatherData.date}
-          </div>
-        </span>
+        <FormattedDate date={weatherData.date} />
 
         <h6 className="location">
           <i className="fas fa-map-marker-alt" id="location-img"></i>
-          <i data-fa-symbol="delete" class="fas fa-trash fa-fw"></i>
+          <i data-fa-symbol="delete" className="fas fa-trash fa-fw"></i>
           
           <span className="cityName" id="city-name">
             {weatherData.city}
