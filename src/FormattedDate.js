@@ -10,6 +10,7 @@ let days = [
   let months = [ "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug",
  "Sept", "Oct", "Nov", "Dec",
   ];
+
 let currentDay = days[props.date.getDay()];
 let currentMonth = months[props.date.getMonth()];
 let currentYear = props.date.getFullYear();
@@ -22,7 +23,7 @@ let currentDate = props.date.getDate();
             {currentDay}
           </h3>
           <div className="date-day" id="day">
-           {currentDate} {currentMonth}  {currentYear}
+           {currentDate} {currentMonth} {currentYear}
           </div>
         </span>
         </div>

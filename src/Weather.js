@@ -42,15 +42,17 @@ if(weatherData.ready) {
         <FormattedDate date={weatherData.date} />
 
         <h6 className="location">
-          <i className="fas fa-map-marker-alt" id="location-img"></i>
-          <i data-fa-symbol="delete" className="fas fa-trash fa-fw"></i>
-          
+        <img className="resize" 
+          src="https://img.icons8.com/material-sharp/24/ffffff/marker.png"
+          id="location-img" 
+          alt="current location"
+          />
           <span className="cityName" id="city-name">
             {weatherData.city}
           </span>
-          ,
+          , &nbsp; 
           <span className="countryCode" id="country-code">
-            {" "} {weatherData.country}
+            {weatherData.country}
           </span>
         </h6>
       </div>

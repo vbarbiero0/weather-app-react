@@ -19,26 +19,33 @@
   top: 1px;
   margin-top: 30px;
   margin-left: 25px;
-  line-height: 32px;
 }
 
 .date-dayname {
   margin: 0;
   font-size: 40px;
+  line-height: 95%;
 }
 
 .date-day {
   margin: 0;
   margin-left: 5px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 450;
 }
 
 .location {
-  margin: 0;
-  margin-left: 5px;
-  font-size: 18px;
-  font-weight: lighter;
+  display: flex;
+  margin: 0 auto;
+  justify-content: left;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 450;
+}
+
+.resize {
+    width: 20px;
+    height: auto;
 }
 
 .weather-container {
